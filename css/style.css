@@ -582,6 +582,65 @@ margin-left: 70px;
 margin-top: 170px;
 
 }
+/* تحسينات إضافية خاصة بالموبايل */
+@media (max-width: 768px) {
+    /* تصغير الـ Header ليتناسب مع شاشة الموبايل */
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    /* ترتيب القائمة واللوجو فوق بعض */
+    .logo {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .logo .img1 {
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    /* جعل الروابط تحت بعضها أو قابلة للتمرير الأفقي عشان ما تطلعش بره الشاشة */
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        padding: 0;
+    }
+
+    .logo ul li, .logo ul li a {
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    .contianer nav ul li .link {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    /* تظبيط مربع البحث والأيقونة في الموبايل */
+    .icon {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin: 15px 0 0 0;
+        word-spacing: 5px;
+    }
+
+    .icon input[type="search"] {
+        width: 70%;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    /* إخفاء العنصر الوهمي لو مش محتاجينه */
+    .yasmen {
+        display: none;
+    }
+}
 .ss{
     margin-left: 10px;
 background-color: #e7ddd5;
