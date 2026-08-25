@@ -587,16 +587,15 @@ margin-top: 170px;
 background-color: #e7ddd5;
 font-size: 30px;
 color: #3a1e06;}
-/* --- تعديلات الموبايل المخصصة بدقة (للحفاظ على باقي الموقع) --- */
-@media (max-width: 768px) {
-    
+
+/@media (max-width: 768px) {
     /* 1. منع الحركة الأفقية وثبات الشاشة */
     html, body {
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
 
-    /* 2. تظبيط الناف بار والهيدر عشان تظهر كاملة وما ينقصش منها حاجة */
+    /* 2. الهيدر والناف بار (زي ما طلبت مش هنتعرض لها لأنها مظبوطة) */
     header {
         height: auto !important;
         padding: 8px 0 !important;
@@ -644,7 +643,7 @@ color: #3a1e06;}
         float: none !important;
     }
 
-    /* 3. تظبيط البانر الرئيسي */
+    /* 3. القسم الأول والبانر */
     .img2 {
         position: static !important;
         transform: none !important;
@@ -658,46 +657,97 @@ color: #3a1e06;}
         display: none !important;
     }
 
-    /* 4. كروت الكراسي: تصغير حجمها لتكون مظبوطة وكل اثنين جنب بعض بالضبط */
-    .section5 {
+    /* 4. معالجة مشكلة القسم الثاني والمكان الفاضي (Section 2) */
+    .section2 {
+        height: auto !important;
+        margin-top: 20px !important; /* إلغاء الـ 600px العالية اللي كانت عاملة فراغ أبيض كبير */
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* عرض كل كارتين جنب بعض */
+        gap: 10px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .div1 {
+        margin: 0 !important;
+        padding: 10px !important;
+        text-align: center;
+    }
+
+    .img3 {
         width: 100% !important;
         height: auto !important;
     }
 
-    .start {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 8px !important;
-        width: 100% !important;
-        padding: 0 5px !important;
+    .h22 {
+        margin-top: 20px !important;
+        margin-left: 0 !important;
+        text-align: center !important;
+        grid-column: span 2;
     }
 
-    .divaly {
-        display: block !important;
+    .p1 {
+        margin-top: 5px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        grid-column: span 2;
+    }
+
+    /* 5. القسم الثالث (النصوص والصورة العرضية) */
+    .section3 {
+        height: auto !important;
+        margin-top: 30px !important;
+    }
+
+    .content {
         width: 100% !important;
+        height: auto !important;
+    }
+
+    .paragraph {
+        width: 95% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        padding: 15px !important;
+    }
+
+    /* تصغير حجم النص والعنوان في القسم الثالث عشان ما يتداخلوش */
+    .paragraph1 {
+        font-size: 24px !important;
+    }
+
+    .paragraph2 {
+        font-size: 14px !important; /* تصغير حجم الكلام */
+        line-height: 1.5;
+    }
+
+    .imgcontent1 {
+        width: 95% !important;
+        margin: 20px auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        gap: 10px !important;
+    }
+
+    .imgcontent {
+        width: 48% !important;
+        height: 150px !important;
         margin: 0 !important;
     }
 
-    .salwa {
-        width: 100% !important;
-        height: 180px !important; /* تصغير الارتفاع عشان ما تبقاش تخينة */
-        margin: 0 !important;
+    /* إخفاء خطوط الزينة المضروبة في الموبايل عشان ما تعملش زحمة */
+    .pcolor1, .pcolor2, .pcolor3 {
+        display: none !important;
     }
 
-    .nor, .nora {
-        width: 100% !important;
-        height: 180px !important;
-    }
-
-    /* 5. الأربع أيقونات: جعلها شبكة 2x2 (كل اثنين جنب بعض) */
+    /* 6. قسم الأيقونات (الـ 4 خدمات Delivery وغيرها) */
     .section4 {
         display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* جنب بعض */
         gap: 10px !important;
         width: 100% !important;
         padding: 10px 5px !important;
         height: auto !important;
-        text-align: center !important;
     }
 
     .div4, .div5, .div6, .div7, .div8 {
@@ -707,6 +757,84 @@ color: #3a1e06;}
         margin-bottom: 0 !important;
         display: block !important;
         padding: 10px !important;
+    }
+
+    /* تصغير الأيقونات */
+    .div4 .ph, .div5 .ph2, .div6 .ph5, .div7 .ph6, .div8 .ph7 {
+        height: 50px !important;
+        width: 40px !important;
+        margin-top: 10px !important;
+    }
+
+    .ph1, .ph3, .ph5, .ph6, .ph7 {
+        background-size: 40px !important; /* تصغير حجم أيقونة الخلفية */
+    }
+
+    .hh {
+        font-size: 14px !important; /* تصغير الخط */
+    }
+
+    .pp {
+        font-size: 12px !important;
+    }
+
+    hr {
+        width: 90% !important;
+        margin: 15px auto !important;
+    }
+
+    /* 7. قسم الكراسي والمنتجات (Featured Products) */
+    .section5 {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* تصغير وتنسيق الكلمات اللي فوق الكراسي لتكون متناسقة */
+    .p12 {
+        margin: 10px 8px !important;
+        font-size: 13px !important;
+    }
+
+    .start {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* كل كرسيين جنب بعض بالضبط */
+        gap: 10px !important;
+        width: 100% !important;
+        padding: 0 10px !important;
+    }
+
+    .divaly {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* جعل الكارت كامل جوه الشاشة وظابط من تحت */
+    .salwa {
+        width: 100% !important;
+        height: 250px !important; 
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .alaaali, .alaaaly, .nor, .nora {
+        width: 100% !important;
+        height: 170px !important; /* تصغير الصورة عشان تظهر كاملة جوه الشاشة */
+    }
+
+    .eslam {
+        margin-left: 0 !important;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .star {
+        font-size: 11px !important; /* تصغير النجوم */
+    }
+
+    .salwaa, .salwaaa {
+        font-size: 12px !important;
+        margin: 2px 0 !important;
     }
 }
 
