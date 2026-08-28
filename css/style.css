@@ -543,7 +543,6 @@ font-weight: bolder;
     height: 360px;
     position: absolute;  
       width: 300px;
- /* background-image: url(../photos/chair2.jpg); */
 background-size: cover;
 transform: rotatey(180deg);
 transition: .1s;
@@ -570,7 +569,6 @@ margin-top: 170px;
 }
 .ss{
     margin-left: 10px;
-background-color: #e7ddd5;
 font-size: 30px;
 color: #3a1e06;}
 
