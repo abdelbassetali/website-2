@@ -800,8 +800,7 @@ color: #3a1e06;}
   }
 
 .paragraph .pcolor3{
-left: 0 !important; 
-}
+display: none;}
 
   .section3 .imgcontent1 {
     display: flex !important;
