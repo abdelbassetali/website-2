@@ -737,6 +737,8 @@ color: #3a1e06;}
 .drop ul li {
     line-height: 1.5;
     z-index: 4;
+   word-spacing: 3px;
+
 }
 
 } 
