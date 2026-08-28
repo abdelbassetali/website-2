@@ -171,7 +171,6 @@ z-index: 4;
         left: 50%;
 transform: translate(-50%,-50%);   
 z-index: -1;
-   margin: 4px 0 !important;
 }
 .yasmen{width: 15px;
     height: 30px;
