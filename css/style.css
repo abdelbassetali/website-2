@@ -465,7 +465,6 @@ hr{
    margin-top:30px;
    margin-left: 130px;
 }
-/*  */
 .section5{
     height: 1200px;
     width: 100%;
@@ -494,13 +493,9 @@ transform: scale(1.5);
 .end{
     text-align: center;
 }
-/*  */
 .start{
     width: 100%;
-    /* display: grid;
-    grid-template-columns: repeat(3,300px);
-    grid-template-rows: repeat(3,300px);
-     */
+
 }
 body{
     perspective-origin: 700px;
@@ -510,11 +505,7 @@ body{
 display: inline-block;
 margin-left: 30px;
 }
-/* .imgstart{
-    width: 90%;
-    height: 90%;
-    transition: 1s;
-} */
+
 .salwaa{
     font-family: sans-serif;
 }
@@ -528,16 +519,6 @@ font-weight: bolder;
 .eslam{
     margin-left: 40px;
 }
-
-
-/* 
-.imgstart1{
-    width: 90%;
-    height: 90%;
-    transition: 1s;
-    position: absolute;
-    z-index: -1;
-} */
  
 .salwa{
     margin: 5px 5px;
@@ -589,254 +570,406 @@ margin-top: 170px;
 background-color: #e7ddd5;
 font-size: 30px;
 color: #3a1e06;}
+
 @media (max-width: 768px) {
 
-    
-
-    /* 1. منع الحركة الأفقية وثبات الشاشة */
-
     html, body {
-
-        max-width: 100% !important;
-
+        width: 100% !important;
         overflow-x: hidden !important;
-
     }
-
-
-
-    /* 2. تظبيط الناف بار والهيدر عشان تظهر كاملة وما ينقصش منها حاجة */
 
     header {
-
         height: auto !important;
-
         padding: 8px 0 !important;
-
+        width: 100% !important;
     }
-
-
 
     .logo {
-
         margin-right: 0 !important;
-
         text-align: center !important;
-
     }
-
-
 
     .logo .img1 {
-
         float: none !important;
-
         display: block !important;
-
         margin: 0 auto 5px auto !important;
-
     }
-
-
 
     nav {
-
         text-align: center !important;
-
     }
-
-
 
     .logo ul {
-
         display: flex !important;
-
         flex-wrap: wrap !important;
-
         justify-content: center !important;
-
         gap: 5px !important;
-
         padding: 0 !important;
-
-    }
-
-
-
-    .logo ul li, .logo ul li a {
-
-        display: inline-block !important;
-
         margin: 0 !important;
-
-        font-size: 12px !important;
-
     }
 
-
+    .logo ul li, 
+    .logo ul li a {
+        display: inline-block !important;
+        margin: 0 !important;
+        font-size: 12px !important;
+    }
 
     .contianer nav ul li .link {
-
         padding: 4px 8px !important;
-
         font-size: 11px !important;
-
     }
-
-
 
     .icon {
-
         position: static !important;
-
         width: 100% !important;
-
         text-align: center !important;
-
         margin: 8px 0 0 0 !important;
-
         float: none !important;
-
     }
-
-
-
-    /* 3. تظبيط البانر الرئيسي */
 
     .img2 {
-
         position: static !important;
-
         transform: none !important;
-
-        width: 95% !important;
-
-        height: 200px !important;
-
-        margin: 10px auto !important;
-
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 10px 0 !important;
         display: block !important;
-
     }
-
-
 
     .yasmen {
-
         display: none !important;
-
     }
 
+  .section2 {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 5px !important;
+  box-sizing: border-box !important;
+  height: auto !important;
+}
 
+.div1 {
+  flex: 0 0 23% !important;
+  max-width: 23% !important;
+  margin: 0 !important;
+  padding: 2px !important;
+  box-sizing: border-box !important;
+  height: 150px;
+}
 
-    /* 4. كروت الكراسي: تصغير حجمها لتكون مظبوطة وكل اثنين جنب بعض بالضبط */
+.img3 {
+  width: 100% !important;
+  height: 85px !important;
+  object-fit: cover !important;
+}
 
-    .section5 {
-
-        width: 100% !important;
-
-        height: auto !important;
-
-    }
-
-
-
-    .start {
-
-        display: grid !important;
-
-        grid-template-columns: repeat(2, 1fr) !important;
-
-        gap: 8px !important;
-
-        width: 100% !important;
-
-        padding: 0 5px !important;
-
-    }
-
-
-
-    .divaly {
-
-        display: block !important;
-
-        width: 100% !important;
-
-        margin: 0 !important;
-
-    }
-
-
-
-    .salwa {
-
-        width: 100% !important;
-
-        height: 180px !important; /* تصغير الارتفاع عشان ما تبقاش تخينة */
-
-        margin: 0 !important;
-
-    }
-
-
-
-    .nor, .nora {
-
-        width: 100% !important;
-
-        height: 180px !important;
-
-    }
-
-
-
-    /* 5. الأربع أيقونات: جعلها شبكة 2x2 (كل اثنين جنب بعض) */
-
-    .section4 {
-
-        display: grid !important;
-
-        grid-template-columns: repeat(2, 1fr) !important;
-
-        gap: 10px !important;
-
-        width: 100% !important;
-
-        padding: 10px 5px !important;
-
-        height: auto !important;
-
-        text-align: center !important;
-
-    }
-
-
-
-    .div4, .div5, .div6, .div7, .div8 {
-
-        width: 100% !important;
-
-        height: auto !important;
-
-        border: none !important;
-
-        margin-bottom: 0 !important;
-
-        display: block !important;
-
-        padding: 10px !important;
-
-    }
+.p2{
+  font-size: 8px !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  font-weight: 700;
+}
+.p3{
+      font-size: 7px !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+    font-weight: 300;
 
 }
 
+.drop {
+    position: absolute;
+    width: 300px !important; 
+    max-width: 90vw !important;
+    border: 2px solid rgb(100, 13, 13);
+    background-color: #cd9777;
+    padding: 15px;
+    margin-top: 5px;
+    transform: scale(0);
+    transition: transform 0.5s, visibility .5s, opacity .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+}
 
+.listdr:hover .drop {
+    transform: scale(.7);
+    visibility: visible;
+    opacity: 1;
+    z-index: 14;
+    margin-top: 0;
+    border-radius: 6px;
+    margin-top: 33px;
+}
 
-    .nor, .nora {
+.drop ul {
+    display: block !important;
+    width: 100% !important;
+    text-align: center;
+    z-index: 4;
+    padding: 0;
+    margin-bottom: 10px;
+    list-style: none;
+    letter-spacing: .3px;
+}
 
-        width: 100% !important;
+.drop ul li:first-child a {
+    display: block;
+    border-bottom: 1px dashed rgb(97, 8, 8);
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    z-index: 4;
+    text-align: center;
+}
 
-        height: 210px !important;
+.drop ul li {
+    line-height: 1.5;
+    z-index: 4;
+}
 
-    }
+} 
+@media (max-width: 768px) {
+  .iconn11 {
+    width: 24px !important;
+    height: 24px !important;
+    line-height: 24px !important;
+    margin-left: auto !important;
+    margin-top: 5px !important;
+    position: relative !important;
+    background-color: #b08968;
+    text-align: center;
+    border-radius: 50%;
+    visibility: hidden;
+
+  }
+  .con {
+    font-size: 14px !important;
+    margin: 0 !important;
+    line-height: 24px !important;
+  }
+  .div1:hover .iconn11{
+    visibility: visible;
+   }
+}
+
+@media (max-width: 768px) {
+  .section3 .content {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    height: auto;
+  }
+
+  .section3 .paragraph {
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+  }
+  .paragraph1 {
+    font-size: 20px !important;
+  }
+
+  .quote {
+    font-size: 20px !important;
+  }
+
+  .section3 .paragraph2 {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  .paragraph .pcolor1 {
+    margin-top: 20px !important;
+  }
+
+.paragraph .pcolor3{
+left: 0 !important; 
+}
+
+  .section3 .imgcontent1 {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-top: 15px !important;
+    margin-left: 0 !important; 
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .section3 .imgcontent1 .imgcontent {
+    width: 48% !important;
+    max-width: 48% !important;
+    height: auto !important;
+    margin-left: 0 !important; 
+    object-fit: cover !important;
+  }
+  .imgcontent:hover{
+transform: scale(1.02,1.02);
+}
+  
+}
+@media (max-width: 768px) {
+  .section4 {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    overflow-x: hidden !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+.section4{
+    margin-top: 65px;
+  }
+  .section4 > div {
+    width: 18% !important;
+    min-width: unset !important;
+    box-sizing: border-box !important;
+    padding: 0 1px !important;
+  }
+
+  .section4 .hh {
+    font-size: 9px !important;
+    white-space: nowrap !important;
+  }
+
+  .section4 .pp {
+    font-size: 7px !important;
+    white-space: nowrap !important;
+  }
+  hr{
+    width: 80%;
+   margin-top:-30px;
+   margin: auto
+  }
+}
+
+@media (max-width: 768px) {
+  .section5 .end {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0 10px !important;
+  }
+
+  .section5 .end .h222 {
+    flex: 0 0 100% !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin-bottom: 10px !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .section5 .end .p12 {
+    flex: 1 !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    margin: 0 2px !important;
+  }
+  .p55{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .section5 .start {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin-top: 30px;
+  }
+
+  .section5 .start .divaly {
+    display: block !important;
+    width: 48% !important;
+    margin-bottom: 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  .section5 .start .divaly img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+  
+}
+  
+@media (max-width: 768px) {
+  section.section5 .start {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    padding: 0 5px !important;
+    box-sizing: border-box !important;
+  }
+
+  section.section5 .start .divaly {
+    width: 48% !important;
+    margin-left: 0 !important;
+    margin-bottom: 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  section.section5 .start .divaly .salwa {
+    width: 100% !important;
+    height: 180px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  section.section5 .start .divaly .alaaali,
+  section.section5 .start .divaly .alaaaly {
+    width: 100% !important;
+    height: 180px !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  section.section5 .start .divaly .eslam {
+    margin-left: 0 !important;
+    text-align: center !important;
+    margin-top: 5px !important;
+  }
+
+  section.section5 .start .divaly .salwaa,
+  section.section5 .start .divaly .salwaaa {
+    font-size: 11px !important;
+  }
+
+  section.section5 .start .divaly .iconss {
+    /* margin-left: 30px !important; */
+    margin-top: 50px !important;
+    text-align: center !important;
+  }
+
+  section.section5 .start .divaly .ss {
+    font-size: 16px !important;
+    margin-left: 3px !important;
+  }
+  
+}
